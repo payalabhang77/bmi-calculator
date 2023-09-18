@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Roboto+Flex:opsz,wght@8..144,500&display=swap" rel="stylesheet">
+    <style>
+       h2{
+           font-family: 'Roboto Flex', sans-serif;
+           text-transform: uppercase;
+           color: cadetblue;
+           text-decoration: underline;
+           padding-left: 120px;
+        }
+        p{
+            color: cadetblue;
+            font-family: 'Poppins', sans-serif;
+            padding-left: 40px;
+        }
+        #div{
+            border: 2px solid rgb(128, 106, 20);
+            display: inline-block;
+            height: 400px;
+            width: 550px;
+            position: absolute;
+            left: 500px;
+            top: 180px;
+            background-color: white;
+        }
+       button{
+        display: inline-block;
+        width: 455px;
+        height: 35px;
+        border: 3px solid black;
+        margin-top: 15px;
+        background-color: rgb(26, 156, 26);
+        color: white;
+       }
+       input{
+        display: inline-block;
+        width: 450px;
+        height: 30px;
+        font-family: 'Poppins', sans-serif;
+        margin-left: 40px;
+       }
+       .enter{
+          margin-left: 50px;
+       }
+       body{
+        background-color:rgb(227, 211, 147) ;
+       }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <h2>Discount Calculator</h2>
+        <p class="enter">Enter The Bill Amount and discount in percentage</p>
+        <p>Bill Amount</p>
+        <input type="number" required autofocus>
+        <p>Discount Percentage</p>
+        <input type="number" required>
+        <p><button type="calculate"><span>Calculate</span></button></p>
+        <p>Total Discount Amount</p>
+    </div>
+    
+</body>
+</html>
